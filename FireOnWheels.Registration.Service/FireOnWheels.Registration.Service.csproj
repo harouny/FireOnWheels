@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Messages\Commands\RegisterOrderCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Messages\Events\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FireOnWheels.Messaging\FireOnWheels.Messaging.csproj">
+      <Project>{170502e1-82f1-4dc1-9312-f36721fafddc}</Project>
+      <Name>FireOnWheels.Messaging</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
